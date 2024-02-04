@@ -177,16 +177,18 @@ void Watchy7SEG::drawSteps()
     }
     uint32_t stepCount = sensor.getCounter();
 
+    uint32_t l5 = 33 * stepCount / 10000;
+
+    if (l5 > 33)
+    {
+        l5 = 33;
+    }
+
+    display.fillRect(158, 37, l5, 7, DARKMODE ? GxEPD_WHITE : GxEPD_BLACK);
+
     if (showState == false)
     {
-        uint32_t l5 = 33 * stepCount / 10000;
 
-        if (l5 > 33)
-        {
-            l5 = 33;
-        }
-
-        display.fillRect(158, 37, l5, 7, DARKMODE ? GxEPD_WHITE : GxEPD_BLACK);
         // display.
 
         int a = stepCount / 10000;
