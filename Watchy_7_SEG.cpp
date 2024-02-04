@@ -89,7 +89,7 @@ void Watchy7SEG::drawTime()
         sk = sh - 12;
 
     int sm = ss % 60;
-    int a = sk >= 10 ? sh / 10 : 0;
+    int a = sk >= 10 ? sk / 10 : 0;
     int b = sk % 10;
     int c = sm >= 10 ? sm / 10 : 0;
     int d = sm % 10;
