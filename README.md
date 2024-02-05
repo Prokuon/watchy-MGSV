@@ -20,3 +20,8 @@ This watchface is primarily inspired by the WIRED AGAM601 watch featured in Meta
 * To calculate exact sunrise/sunset time, change `#define LOC 31.00, 121.00, 8` in `Watchy_7_SEG.cpp`, the three data represents latitude, longitude and timezone
 * To set the GMT offset for network timing, change `#define GMT_OFFSET_SEC 3600 * 8 //New York is UTC -5` in `settings.h`
 * To set the dual time, change `#define Time1Zone 8 #define Time2Zone -5` in `Watchy_7_SEG.cpp`, `Time1Zone` represents the time zone for network timing, `Time2Zone` represents the time zone for dual time
+
+# Credits
+
+* [Dusk2Dawn](https://github.com/dmkishi/Dusk2Dawn)
+  * Utilized code from this repository to calculate sunrise and sunset time
