@@ -24,4 +24,4 @@ This watchface is primarily inspired by the WIRED AGAM601 watch featured in Meta
 # Credits
 
 * [Dusk2Dawn](https://github.com/dmkishi/Dusk2Dawn)
-  * Utilized code from this repository to calculate sunrise and sunset time
+  Utilized code from this repository to calculate sunrise and sunset time
